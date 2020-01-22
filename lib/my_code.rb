@@ -1,16 +1,12 @@
-require 'pry'
 def map(array)
 new_array = []
-i = 0
-  while i < array.length do
-    new_array << yield(array[i])
-  i += 1
-  end 
+
+  array.each do |i|
+    new_array << yield(i)
+  end  
   new_array
 end  
  
-
-
 def reduce(array, starting_value = nil)
   if starting_value
     sum = starting_value
