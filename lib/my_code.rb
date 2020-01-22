@@ -16,7 +16,5 @@ def reduce(array, starting_value = nil)
     i = 1
   end 
   
-  array.reduce(starting_value, :+)
-  
-  sum
+  sum = array.reduce(starting_value, :+)
 end  
