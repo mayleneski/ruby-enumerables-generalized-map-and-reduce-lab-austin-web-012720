@@ -16,8 +16,7 @@ def reduce(array, starting_value = nil)
     i = 1
   end 
   
-  array.reduce(starting_value) do |sum, i|
-    sum = sum + i
-  end  
+  array.reduce(starting_value) {|sum, i| sum + i}
+  
   sum
 end  
