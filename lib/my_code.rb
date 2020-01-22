@@ -17,7 +17,7 @@ def reduce(array, starting_value = nil)
   end 
   
   array.reduce(starting_value) do |sum, i|
-    sum = yield(sum, array[i])
+    sum = sum + i
   end  
   sum
 end  
